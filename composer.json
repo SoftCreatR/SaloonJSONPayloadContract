@@ -1,0 +1,100 @@
+{
+  "name": "softcreatr/saloon-json-payload-contract",
+  "description": "Validate and normalize Saloon responses with JSON Payload Contract",
+  "homepage": "https://github.com/SoftCreatR/SaloonJSONPayloadContract",
+  "license": "ISC",
+  "type": "library",
+  "keywords": [
+    "api",
+    "contract",
+    "json",
+    "jsonpath",
+    "payload",
+    "saloon",
+    "validation"
+  ],
+  "authors": [
+    {
+      "name": "Sascha Greuel",
+      "email": "hello@1-2.dev",
+      "homepage": "https://1-2.dev",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/SoftCreatR/SaloonJSONPayloadContract/issues",
+    "source": "https://github.com/SoftCreatR/SaloonJSONPayloadContract"
+  },
+  "require": {
+    "php": "^8.3",
+    "saloonphp/saloon": "^4.0",
+    "softcreatr/json-payload-contract": "^1.0"
+  },
+  "require-dev": {
+    "ext-simplexml": "*",
+    "friendsofphp/php-cs-fixer": "^3.92",
+    "phpstan/phpstan": "^2.1",
+    "phpunit/phpunit": "^12.5.8",
+    "symfony/process": "^5.4.51 || ^6.4.33 || ^7.3.11 || ^8.0.5"
+  },
+  "conflict": {
+    "guzzlehttp/guzzle": "<7.15.2 || >=8.0,<8.0.1",
+    "guzzlehttp/psr7": "<2.12.3"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "SoftCreatR\\SaloonJsonPayloadContract\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SoftCreatR\\SaloonJsonPayloadContract\\Tests\\": "tests/"
+    }
+  },
+  "archive": {
+    "exclude": [
+      "/.github/",
+      "/.gitignore",
+      "/.idea/",
+      "/.php-cs-fixer.cache",
+      "/.php-cs-fixer.dist.php",
+      "/.phpunit.cache/",
+      "/build/",
+      "/composer.lock",
+      "/coverage.xml",
+      "/junit.xml",
+      "/phpstan.neon.dist",
+      "/phpunit.xml.dist",
+      "/tests/",
+      "/tools/",
+      "/vendor/"
+    ]
+  },
+  "config": {
+    "allow-plugins": false,
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "8.3.0"
+    },
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "scripts": {
+    "check": [
+      "@coverage",
+      "@phpstan",
+      "@cs"
+    ],
+    "coverage": [
+      "php tools/run-coverage.php",
+      "@coverage:check"
+    ],
+    "coverage:check": "php tools/assert-coverage.php coverage.xml",
+    "cs": "php-cs-fixer fix --config=.php-cs-fixer.dist.php --dry-run --diff",
+    "cs-fix": "php-cs-fixer fix --config=.php-cs-fixer.dist.php",
+    "phpstan": "phpstan analyse --no-progress -c phpstan.neon.dist",
+    "test": "phpunit"
+  }
+}
