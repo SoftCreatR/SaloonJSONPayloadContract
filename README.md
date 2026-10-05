@@ -2,7 +2,7 @@
 
 [![Tests](https://github.com/SoftCreatR/SaloonJSONPayloadContract/actions/workflows/tests.yml/badge.svg)](https://github.com/SoftCreatR/SaloonJSONPayloadContract/actions/workflows/tests.yml)
 [![Latest Stable Version](https://img.shields.io/packagist/v/softcreatr/saloon-json-payload-contract.svg)](https://packagist.org/packages/softcreatr/saloon-json-payload-contract)
-[![License](https://img.shields.io/packagist/l/softcreatr/saloon-json-payload-contract.svg)](LICENSE)
+[![License](https://img.shields.io/github/license/SoftCreatR/SaloonJSONPayloadContract.svg)](LICENSE)
 [![PHP Version Require](https://img.shields.io/packagist/dependency-v/softcreatr/saloon-json-payload-contract/php.svg)](https://packagist.org/packages/softcreatr/saloon-json-payload-contract)
 
 Validate and normalize Saloon responses at the point where an external API enters your application.
