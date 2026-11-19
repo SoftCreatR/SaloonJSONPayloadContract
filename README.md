@@ -76,9 +76,9 @@ The adapter always evaluates the raw response body. It deliberately does not pas
 
 ## Requirements
 
-- PHP 8.3 or newer
+- PHP 8.2 or newer
 - Saloon 4.x
-- JSON Payload Contract 1.x
+- JSON Payload Contract 1.0.1 or newer in the 1.x line
 
 ## Installation
 

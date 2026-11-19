@@ -11,7 +11,7 @@ composer install
 composer check
 ```
 
-Use PHP 8.3 when running PHP CS Fixer because it is the package's minimum supported PHP version.
+Use PHP 8.2 when running PHP CS Fixer because it is the package's minimum supported PHP version.
 
 ## Pull requests
 

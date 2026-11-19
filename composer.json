@@ -26,15 +26,16 @@
     "source": "https://github.com/SoftCreatR/SaloonJSONPayloadContract"
   },
   "require": {
-    "php": "^8.3",
+    "php": "^8.2",
     "saloonphp/saloon": "^4.0",
-    "softcreatr/json-payload-contract": "^1.0"
+    "softcreatr/json-payload-contract": "^1.0.1"
   },
   "require-dev": {
     "ext-simplexml": "*",
     "friendsofphp/php-cs-fixer": "^3.92",
     "phpstan/phpstan": "^2.1",
-    "phpunit/phpunit": "^12.5.8",
+    "phpunit/phpunit": "^11.5.50 || ^12.5.8",
+    "symfony/filesystem": "^5.4.56 || ^6.4.50 || ^7.4.23 || ^8.1.11",
     "symfony/process": "^5.4.51 || ^6.4.33 || ^7.3.11 || ^8.0.5"
   },
   "conflict": {
@@ -76,7 +77,7 @@
     "allow-plugins": false,
     "optimize-autoloader": true,
     "platform": {
-      "php": "8.3.0"
+      "php": "8.2.0"
     },
     "preferred-install": "dist",
     "sort-packages": true
